@@ -22,11 +22,6 @@ class Main extends Component {
         return (
             <div>
                 <Header />
-                <Navbar dark color="primary">
-                    <div className="container">
-                        <NavbarBrand href="/">NuCamp</NavbarBrand>
-                    </div>
-                </Navbar>
                 <Directory campsites={this.state.campsites} onClick={campsiteId => this.onCampsiteSelect(campsiteId)}/>
                 <CampsiteInfo campsite={this.state.campsites.filter(campsite => campsite.id === this.state.selectedCampsite)[0]} />
                 <Footer />
