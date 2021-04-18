@@ -79,8 +79,8 @@ function RenderPartner(props) {
     if (partner) {
         return(
             <React.Fragment>
-                <Media obj={Boolean} src={partner.image} alt={partner.name} width="150" />
-                <Media body={Boolean} className="ml-5 mb-4"><Media heading={Boolean}>{partner.name}</Media>
+                <Media obj={true} src={partner.image} alt={partner.name} width="150" />
+                <Media body={true} className="ml-5 mb-4"><Media heading={true}>{partner.name}</Media>
                 {partner.description}
                 </Media>
             </React.Fragment>
